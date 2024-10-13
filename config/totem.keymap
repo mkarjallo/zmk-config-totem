@@ -40,22 +40,6 @@
             bindings = <&kp ESC>;
         };
     };
-
-    macros {
-        gif: gif {
-            label = "giphy";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp N2>,
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp G &kp I &kp F>;
-        };
     };
 
     keymap {
@@ -83,7 +67,7 @@
             &kp Q       &kp W       &kp F          &kp P          &kp B          &kp J        &kp L              &kp U        &kp Y       &kp SQT
             &mt LGUI A  &mt LALT R  &mt LCTRL S    &mt LSHFT T    &kp G          &kp M        &mt RSHFT N        &mt RCTRL E  &mt RALT I  &mt RGUI O
 &kp ESCAPE  &kp Z       &kp X       &kp C          &kp D          &kp V          &kp K        &kp H              &kp COMMA    &kp DOT     &kp FSLH    &kp SEMI
-                                    &lt NUM        &lt NAV SPACE  &lt SYM TAB    &lt SYM RET  &lt NAV BSPC       &lt NUM
+                                    &mo NUM        &lt NAV SPACE  &lt SYM TAB    &lt SYM RET  &lt NAV BSPC       &mo NUM
             >;
         };
 
